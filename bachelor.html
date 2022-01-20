@@ -30,64 +30,57 @@
 										en teoretisk Stock-Flow Consistent model</h4>
 								</header>
 								<div class="image center"><img src="images/tobin.png" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<p>James Tobin argumenterede, at rationelle individer vil foretrække diversitet og derfor holde forskellige typer af aktiver i deres portefølje.
+                                     Her vil individer givetvis placere dele af deres formue i forskellige aktiver såsom penge, aktier, fysiske aktiver, rentebærende obligationer mv.
+                                    Her foreskriver Tobins teori, at en investor vil skulle beslutte, hvor stor andelen af penge skal udgøre af den samlede portefølje af finansielle aktiver,
+                                     da penge antagelsesvis ikke tjener nogen renter. I dette projekt anvendes penge (M<sub>d</sub>), aktier (E<sub>d</sub>) og rentebærende obligationer (BL<sub>d</sub>),
+                                      hvor ved teorien kan illustres som ovenfor.</p>
+								<p><span class="image right"><img src="images/ARDL.png" alt="" /></span> Til estimering af lambda-værdier i Tobins teori anvendes en økonometrisk single-equation model, i form af ARDL Bounds testen, der betragtes som den korrekte fremgangsmetode,
+                                     da alle inkluderede variable optræder som enten I(0) eller I(1) variable. En single-equation model foretrækkes fremfor en vektor model,
+                                      grundet det lave antal af observationer i dataet. Det skal bemærkes, at ARDL Bounds testen ikke tager højde for samtidskorrelation. 
+                                      Derfor benyttes resultaterne af vektormodellerne, med de samme inkluderede variable som i de anvendte modeller, 
+                                      til at bekræfte "korrektheden" af estimaterne i disse anvendte modeller. For disse vektormodeller findes signifikante resultater, 
+                                      med undtagelse af et stød til afkast på aktier med hensyn til andel af holdte obligationer, derudover findes de samme fortegn, som ved ARDL Bounds testen.
+                                      <span class="image left"><img src="images/vektor.png" alt="" /></span> Her ses et eksempel med et positivt stød til afkast på aktier i form af en stigning i afkastet på C20 indekset på andel af aktier de danske husholdnigner ønsker at holde.
+                                    Resultatet er som forventet, at de danske husholdninger ønsker at holde flere aktier, når afkastet herpå stiger, hvilket betyder,
+                                     at den indsamlede empiri er i stand til at fange den udvikling som tobins teori forskriver. Effekten er yderligere bakket op af,
+                                      at konfidensintervallet i gennem hele stødet ligger over 0, hvilket betyder, at der i hvert fald med 66% sandsynlighed er en effekt forskellig fra 0.</p>
+                                      <p><span class="image right"><img src="images/allokering.png" alt="" /></span>Resultaterne fra den økonometriske undersøgelse blev derefter anvendt i en teoretisk SFC-model for at afprøve, hvilken virkning de estimerede parametre havde på realøkonomien.
+                                          Dette blev gjort ved hjælp af forskellige stød til modellen bl.a forventet afkast på aktier og et kontraktivt stød til det offentlige forbrug, 
+                                          der havde til formål at undersøge relation mellem allokeringen af husholdningernes forskellige aktiver og realøkonomien.
+                                           Resultatet af af et stød til det forventede afkast på aktier fra 3% til 6% på allokering af de danske husholdningers finansielle aktiver
+                                            kan ses på billede til højre og den realøkonomiske ændring kan ses nedenunder. Allokeringen af aktiver viser,
+                                        at husholdningerne øger deres andel af aktier grundet det øgede afkast herpå,
+                                         imens de sænker deres beholdning af obligationer grundet det nu relativt laver afkast herpå. 
+                                         Beholdningen af penge er nogenlunde uændret, da penge hovedsageligt anvendes til transaktionsformål.</p>
+                                         <div class="box alt">
+                                         <div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/pris_aktier.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/disp_ind.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/bnp.png" alt="" /></span></div>
+                                         </div>
+                                        </div>
+                                        <p>Realøkonomisk ser vi øget disponibelindkomst grundet det øgede realiserede udbytte på aktier som husholdningerne opnår. 
+                                            Når aktieudbyttet stiger, tages dette fra virksomhedens lønudbetalinger til husholdningerne. Derved ligger ændringen i den lavere skat,
+                                             der betales på aktieudbyttet. Denne effekt vil samtidig også hæve den forventede disponible indkomst. 
+                                            Udviklingen i forbruget sker gennem begge led i forbrugsfunktionen, hvor der først vil ske en stigning i forbruget gennem den voksende formue og samtidig også den stigende disponible indkomst.
+                                            Det øgede steady state niveau i forbrug, som fremgår af den midterste figur resulterer samtidig i, at det samlede output i modellen stiger.</p>
+                                            <p>For yderligere uddybning, resultater og kildehenvisning henvises der til downloade den komplete opgave her under<ul class="actions">
+                                                <li><a href="files/Efterprovning_af_Tobins_portefoljeteori.pdf" download="Efterprovning_af_Tobins_portefoljeteori.pdf" class="button primary">Download opgave</a></li>
+                                                                                            </ul></p>
 							</section>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
+						
+						
 					</footer>
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li> Andreas Methling</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
