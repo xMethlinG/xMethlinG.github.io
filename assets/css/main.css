@@ -2611,6 +2611,13 @@ input, select, textarea {
 			margin: 0 2rem 2rem 0;
 			top: 0.75rem;
 		}
+		.image.center {
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+			width: 50%;
+			top: -1.75rem;
+		}
 
 		.image.right {
 			float: right;
@@ -2670,10 +2677,10 @@ input, select, textarea {
 		}
 
 		a.image:hover img {
-			-moz-transform: scale(1.05);
-			-webkit-transform: scale(1.05);
-			-ms-transform: scale(1.05);
-			transform: scale(1.05);
+			-moz-transform: scale(1);
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
 		}
 
 /* Actions */
