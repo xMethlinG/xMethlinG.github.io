@@ -67,7 +67,7 @@
 						<!-- Header2 -->
 							<header class="major", id="header2">
 									
-								<h2><a href="">Andre projekter</a></h2>
+								<h2>Andre projekter</a></h2>
 								<p>Yderligere relevante semester og machine learning projekter kan ses herunder samt et kort skrive angående formålet og resultatet af dem. </p>
 							</header>
 						<!-- Posts -->
@@ -76,25 +76,15 @@
 									<header>
 										
 										<h2>Start-ups opkøbt<br> eller lukket</h2>
-										<h4>Et unsupervised and supervised machine learning projekt</h4>
+										<h4>Et unsupervised og supervised machine learning projekt</h4>
 									</header>
 									<a  class="image fit"><img src="images/Confusion_matrix_rf.png" alt="" /></a>
 									<p>Undersøgelse af hvilke variable, der er essentielle for, at start-ups i USA bliver opkøbt eller lukker ved brug af unsupervised machine learning tekniker.</p>
 									<p>Projektet viser, at de vigtigste variable for, om en amerikansk start-up bliver opkøbt er antallet af relationer/størrelse af netværk samt den totale mængde funding de får.
 										Yderligere er den opstillede random forrest model i stand til at forudsige start-ups'nes skæbne med en 77% præcision, der er billedligt illustreret ovenfor i en confusion matrix.
-										 Alt anvendt kode kan hentes under samt et kortere skriv om projketets resultater.
+										 Alt anvendt kode kan hentes her under samt et kortere skriv om projketets resultater.
 									</p>
-										<picture>
-										<source media="(min-width: )" srcset="">
-										<img src="" alt="">
-									</picture>
-										<picture>
-										<source media="(min-width: )" srcset="">
-										<img src="" alt="">
-									</picture><picture>
-										<source media="(min-width: )" srcset="">
-										<img src="" alt="">
-									</picture></p>
+										
 									<ul class="actions fit">
 										<li><a href="files/Stakeholder_report.pdf" download="Stakeholder_report.pdf" class="button primary fit">Download rapport</a></li>
 										<li><a href="files/SDS_M1.pdf" download="SDS_M1.pdf" class="button fit">Download kode</a></li>
@@ -109,7 +99,12 @@
 									<a  class="image fit"><img src="images/projekt2.jpg" alt="" /></a>
 									<p>Data fra IMDB er blevet anvendt til at undersøge, om filmbeskrivelser kan anvendes til at forudsige genren på film,
 										 og efterfølgende er selv samme beskrivelser blevet anvendt til at lave et anbefalingssystem, der finder sammenlignelige film.</p>
-										 <p>Projektet viser, </p>
+										 <p>Projektet viser, at multiclass random forest modellen har en accuracy på lidt over 52%, hvilket er nogenlunde tilfredsstillende givet,
+											 at det arbejdes med en multiclass model. Modellens store problem er, at den har svært ved at skille thriller fra de andre anvendte genre som drama og horror.
+											 Derimod gav anbefalingssystemet fine resultater, hvor der i billedet ovenfor kan ses resultatet af en søgning på film, der minder om Alice i eventyrland,
+											 hvor man uden og have set filmen må vurdere, at i hvert fald tre af forudsigelserne er spot on.
+											 Alt anvendt kode kan hentes her under samt et kortere skriv om projketets resultater.
+										 </p>
 									<ul class="actions fit">
 										<li><a href="files/Stakeholder_report_2.pdf" download="Stakeholder_report_2.pdf" class="button primary fit">Download rapport</a></li>
 										<li><a href="files/SDS_M2.pdf" download="SDS_M2.pdf" class="button fit">Download kode</a></li>
@@ -118,50 +113,70 @@
 								<article>
 									<header>
 										
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
+										<h2>Stemnings/følelses forudsigelse</h2>
+										<h4>Et supervised machine learning og neural network projekt</h4>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+									<a class="image fit"><img src="images/GRU.png" alt="" /></a>
+									<p>Data for næsten 210.000 sange er blevet brugt til at forsøge, at forudsige en sangsstemning ud fra dens lyrik.
+										 Labels er blevet lavet ved at tjekke stemningen ved hvert enkelt ord i hver sang og summmere dem sammen for at finde den samlede stemning.
+									</p>
+									<p>Efterfølgende er machine learning modeller og neural network modeller som ANN, RNN og LSTM blevet brugt for at se,
+										om dataet bedst bliver forklaret af en machine learning model eller de mere komplicerede neural network modeller. 
+									   Her viste machine learning modellen at gøre det bedst, grundet strukturen af dataet og de hjemmelavede labels, med en accuracy på 74%.
+									Videre undersøgelser efter afslutning af projektet har dog vist, at en bidirectional GRU/LSTM model med på forhånd trænede embedings gav en forbedret accuracy på 80%.
+									Alt anvendt kode kan hentes her under samt et kortere skriv om projketets resultater.</p>
+									<ul class="actions fit">
+										<li><a href="files/Stakeholder_report_3.pdf" download="Stakeholder_report_3.pdf" class="button primary fit">Download rapport</a></li>
+										<li><a href="files/SDS_M3.pdf" download="SDS_M3.pdf" class="button fit">Download kode</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
 										
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
+										<h2>Sammenhængen mellem C20-aktieindekset og
+											danske makroøkonomiske variable: En
+											ARDL-Bounds testing approach</h2>
+										<h4>Empirisk projekt, 5. semester</h4>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<a href="#" class="image fit"><img src="images/ARDL_sem5.png" alt="" /></a>
+									<p>Følgende projekt satte sig for at undersøge sammen-hængen mellem udvalgte danske makroøkonomiske variable og væksten i det danske C20-aktieindeks.
+										Dette blev gjort med en økonometrisk tilgang gennem en ARDL-Bounds test, der har til formål at teste for cointegration og dermed langsigtet forhold mellem det indholdte variable.
+									</p>
+									<p>Projektets resultater fandt signifikante langsigtede sammenhænge mellem C20-indekset, BNP og den lange rente. For BNP blev det observeret, at en stigning på én milliard kroner i BNP vil forårsage en vækst i
+										aktiemarkedet på 0.6%. Yderligere vil C20-indekset stige med 14%, når den lange rente
+										falder med ét procentpoint. Disse resultater stemmer overens med de teoretiske såvel som
+										empiriske antagelser om, at BNP er positivt korreleret med væksten i C20-indekset, mens
+										den lange rente er negativt korreleret med væksten i C20-indekset.
+										Projektet i sin fulde længde kan downloades her under samt den anvendte kode.</p>
+										<ul class="actions fit">
+											<li><a href="files/Projekt_5._semester.pdf" download="Projekt_5._semester.pdf" class="button primary fit">Download projekt</a></li>
+											<li><a href="files/Projekt_5_sem_code.pdf" download="Projekt_5_sem_code.pdf" class="button fit">Download kode</a></li>
+										</ul>
 								</article>
 								<article>
 									<header>
 										
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
+										<h2>Spekulativt valutaangreb</h2>
+										<h4>Makroøkonomisk projekt, 4. semester</h4>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+									<a href="#" class="image fit"><img src="images/renterne.png" alt="" /></a>
+									<p>I forbindelse med det schweiziske depeg og efterfølgende det spekulative angreb på den danske krone undersøger dette projekt,
+										 hvordan den Danske Nationalbank var i stand til at bibeholde den faste valutakurs fra 1982. 
+										 Endvidere ses der på de teoretiske konskvenser ved at depege sin valuta kontra at bibeholde fastkurspolitikken, der underbygges med empiri fra Schweiz og Danmark.
+										</p>
+										<p> Den samlede projektanalyse kunne konkludere, at nettoværdien for Den Danske Nationalbank, samt
+											troværdigheden af denne, spillede en central rolle i bibeholdelsen af fastkursregimet. Dette
+											var en essentiel faktor, hvor Mundell-Fleming-modellen dertil foreskrev en økonomisk
+											gevinst ved fortsat bibeholdelse af fastkursregimet, som samtidig var i overensstemmelse
+											med den faktisk observerede empiri.
+											
+											Projektet i sin fulde længde kan downloades her under.</p>
+									<ul class="actions fit">
+										<li><a href="files/Projekt_4_sem.pdf" download="Projekt_4_sem.pdf" class="button primary fit">Download projekt</a></li>
 									</ul>
 								</article>
 								<article>
-									<header>
-										
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									
 								</article>
 							</section>
 
@@ -181,10 +196,9 @@
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/andreasmethling/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.facebook.com/andreas.methling/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://twitter.com/AndreasMethling" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 								</ul>
 							</section>
 						</section>
